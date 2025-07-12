@@ -134,6 +134,11 @@ python advanced_tcp_sender.py -t 192.168.1.100 -p 8080 --payload-type json --pay
 }
 ```
 
+这个场景可能比较多，如模拟发包，这里面模拟发送一个frp的数据包，内容如下：
+<img width="2990" height="284" alt="image" src="https://github.com/user-attachments/assets/9b241c53-4f44-49da-bf93-7e5648001c7d" />
+模拟发包如下：
+python3 advanced_tcp_sender.py -t 1.117.79.251 -p 80 --payload-type json --payload-config '{"data": {"version":"0.38.0","hostname":"","os":"windows","arch":"amd64","user":"","privilege_key":"2640fe6fea802876d46626b9d30e","timestamp":1752240812,"run_id":"","metas":null,"pool_count":1}}'
+
 ### 6. hex
 从十六进制字符串构建数据：
 ```json
